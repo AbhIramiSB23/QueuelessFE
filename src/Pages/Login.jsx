@@ -72,7 +72,7 @@ const Login = () => {
             </div>
 
             <Link
-              to="/patient-dashboard"
+              to="/"
               className="w-full bg-teal-600 hover:bg-teal-700 text-white p-4 rounded-xl font-semibold flex justify-center items-center gap-3"
             >
               Login <FaArrowRight />

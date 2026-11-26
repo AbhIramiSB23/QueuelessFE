@@ -12,12 +12,19 @@ import Booking from './Pages/Booking'
 import BookToken from './Pages/BookToken '
 import QueueTracking from './Pages/QueueTracking'
 import Chatbot from './Pages/Chatbot'
-import DoctorDashboard from './Pages/Doctordashboard'
-import QueueManagement from './Pages/QueueManagement'
+import Hospitaldashboard from './Hospital dashboard/Hospitadashboard'
 import RegisterWalkin from './Components/RegisterWalkin'
 import Admin from './Pages/Admin '
 
 import Footer from './Components/Footer'
+import DoctorManagement from './Hospital dashboard/DoctorManagement'
+import PatientManagement from './Hospital dashboard/PatientManagement'
+import QueueManagement from './Hospital dashboard/QueueManagement'
+
+import Department from './Hospital dashboard/Department'
+import HospitalSidebar from './Hospital dashboard/HospitalSidebar'
+
+
 
 
 
@@ -36,9 +43,19 @@ const App = () => {
         <Route path="/book-token" element={<BookToken />} />
         <Route path="/queue-tracking" element={<QueueTracking />} />
         <Route path="/chatbot" element={<Chatbot />} />
-        <Route path="/doctor-dashboard" element={<DoctorDashboard />} />
-        <Route path="/queue-management" element={<QueueManagement />} />
+      
         <Route path="/register-walkin" element={<RegisterWalkin />} />
+
+
+        <Route path="/hospital-dashboard" element={<Hospitaldashboard />} />
+        <Route path="/doctor-management" element={<DoctorManagement />} />
+        <Route path="/patient-management" element={<PatientManagement />} />
+        <Route path="/queue-management" element={<QueueManagement />} />
+        
+        <Route path="/department" element={<Department />} />
+        <Route path="/sidebar" element={<HospitalSidebar />} />
+
+
         <Route path="/admin" element={<Admin />} />
       </Routes>
 
